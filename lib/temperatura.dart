@@ -10,7 +10,8 @@ import 'package:web/web.dart' as web;
 /// Obtiene la URL base según el host actual
 String getBaseUrl() {
   final host = web.window.location.hostname;
-  return 'http://$host/api/temperatura';
+  //return 'http://$host:5000/api/temperatura';
+  return 'http://10.42.0.63:5000/api/temperatura';
 }
 
 /// Llama al endpoint para obtener la temperatura

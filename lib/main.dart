@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:proyecto_final_embebidos/graph_screen.dart';
 import 'package:proyecto_final_embebidos/temperatura.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -101,7 +102,12 @@ class _MyHomePageState extends State<MyHomePage> {
               child: SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => TemperaturaGraphScreen()),
+                    );
+                  },
                   child: AutoSizeText(
                     'Grafica',
                     style: TextStyle(fontSize: 50.0),
